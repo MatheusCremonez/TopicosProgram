@@ -1,0 +1,1 @@
+var inimigos='[{"nome":"Beth","vida":1},{"nome":"Bola","vida":2},{"nome":"CoisaRosa","vida":2},{"nome":"Concerto","vida":3},{"nome":"Gary","vida":1},{"nome":"GunkSummer","vida":1},{"nome":"Jerry","vida":1},{"nome":"MortyRosa","vida":2},{"nome":"MortyZumbi","vida":3},{"nome":"Rick","vida":4}, {"nome":"Tinkles","vida":2}]';

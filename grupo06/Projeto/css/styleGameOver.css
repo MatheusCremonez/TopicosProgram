@@ -1,0 +1,72 @@
+/*
+    Leonardo Rodrigues Guissi               RA: 15251275
+    Leonardo Borges Bergamo                 RA: 15108244
+	Matheus Augusto Cremonez Guimarães		RA: 15004336
+
+*/
+
+* {
+    font-family: VT323;
+    font-size: 1.30208vw;
+    color: #000000;
+}
+
+body{
+	margin: 0;
+    background-color: #0066cc;
+    width: 99%;
+    height: 100%;
+}
+
+.gameOver{
+    margin-left: 25%;
+    width: 50%;
+    text-align: center;
+}
+
+.goGif{
+    width: 100%;
+}
+
+h1,h2{
+    color: white;
+    border-style: black;
+    font-size: 3.294289897510981vw;
+}
+
+#pontos{
+    color: white;
+    border-style: black;
+    font-size: 3.294289897510981vw;
+}
+
+.buttonDesign{
+	color: #004840;
+	padding: 0.5208vw 1.0416vw;
+	background: -moz-linear-gradient(
+		top,
+		#02c3d8 0%,
+		#82ffea 25%,
+		#02c3d8);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#02c3d8),
+		color-stop(0.25, #82ffea),
+		to(#02c3d8));
+	-moz-border-radius: 1.5625vw;
+	-webkit-border-radius: 1.5625vw;
+	border-radius: 1.5625vw;
+	border: 0.15625vw solid #eeda45;
+	-moz-box-shadow:
+		0vw 0.15625vw 0.572916vw rgba(0,0,0,0.5),
+		inset 0vw 0vw 0.05208vw rgba(182,229,250,1);
+	-webkit-box-shadow:
+		0vw 0.15625vw 0.572916vw rgba(0,0,0,0.5),
+		inset 0vw 0vw 0.05208vw rgba(182,229,250,1);
+	box-shadow:
+		0vw 0.15625vw 0.572916vw rgba(0,0,0,0.5),
+		inset 0vw 0vw 0.05208vw rgba(182,229,250,1);
+	text-shadow:
+		0vw -0.05208vw 0vw rgba(000,000,000,0.2),
+		0vw 0.05208vw 0vw rgba(255,255,255,0.3);
+}

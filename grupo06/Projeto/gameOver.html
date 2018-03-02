@@ -1,0 +1,44 @@
+<!-- Nomes:
+        Leonardo Rodrigues Guissi               RA: 15251275
+        Leonardo Borges Bergamo                 RA: 15108244
+		Matheus Augusto Cremonez Guimarães		RA: 15004336
+-->
+
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+
+    <head>  <!-- link para os css e js utilizados -->
+        <meta charset="utf-8">
+        <meta name="viewport" media="screen" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+        <link rel="icon" type="imagem/png" href="images/mortyIcon.png">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/styleGameOver.css">
+        <script type="text/javascript" src="js/logicGameOver.js"></script>
+        <script type="text/javascript" src="js/twitter.js"></script>
+
+        <title>Rick And Morty</title>
+    </head>
+
+    <body onload="fimJogo();">
+
+        <!-- Botões do Game Over -->
+        <div class="gameOver">
+            <form>
+                <h1>GAME OVER</h1>
+                <h2>SUA PONTUAÇÃO FOI: <span id="pontos">0</span> PONTOS</h2>
+                
+                <img class="goGif" src="images/gameOver.gif">
+                <input class="buttonDesign" type="button" name="Play Again" value="Jogar Novamente" onclick="menuJogo();" />
+                <input class="buttonDesign" type="button" name="Tweet on Twitter" value="Compartilhar" onclick="compartilharResultado();" />
+            </form>    
+
+        </div>
+
+        <audio id="music" autoplay loop> <!-- música do Game Over -->
+            <source src="musics/end.mp3" type="audio/mpeg">
+        </audio>
+
+    </body>
+
+</html>

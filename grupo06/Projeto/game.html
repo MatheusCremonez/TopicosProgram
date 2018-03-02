@@ -1,0 +1,62 @@
+<!-- Nomes:
+        Leonardo Rodrigues Guissi               RA: 15251275
+        Leonardo Borges Bergamo                 RA: 15108244
+		Matheus Augusto Cremonez Guimarães		RA: 15004336
+-->
+
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+
+    <head>  <!-- link para os css e js utilizados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+        <link rel="icon" type="imagem/png" href="images/mortyIcon.png">
+        <link rel="stylesheet" type="text/css" href="css/styleGame.css">
+        <script type="text/javascript" src="js/logicCanvasPersonagens.js"></script>
+        <script type="text/javascript" src="dadosInimigos.json"></script>
+        
+        <!-- jquery para utilizar a api do yahoo weather -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <title>Rick And Morty</title>
+    </head>
+
+    <body onload="Iniciar();">
+
+            <!-- Tempo, Regras, personagens e vida dos personagens que mostram na tela -->
+            <div id="divPontuacaoTempo">
+                <p id="pontos">Kills: <span id="pontosNum">0</span></p>
+                <p id="tempo">Tempo: <span id="minuto"></span> <span id="segundo"></span> </p>
+            </div>
+            <div id="divRegras">
+                <h3>Como Jogar</h3>
+                <p>&nbsp Utilize as setas do teclado<br>&nbspabaixo para movimentar o Morty:</p>
+                <img id="imgSetas" src="images/keyboard.png">
+                <p>&nbsp Utilize o espaço para atirar<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp nos parasitas:</p>
+                <img id="imgSpace" src="images/space.png">
+                <div class="clear">
+                </div>
+                <img id="imgPersonagens" src="images/personagens.png">
+                
+            </div>
+            
+            <canvas id="canvasJogo"></canvas>
+            <div id="jogavelMorty" onclick="trocaPersonagem('Morty','0');"></div>
+            <div id="jogavelSummer" onclick="trocaPersonagem('Summer', '1');"></div>
+            <div id="jogavelJaguar" onclick="trocaPersonagem('Jaguar','2');"></div>
+            <div id="jogavelWizard" onclick="trocaPersonagem('Wizard','3');"></div>
+            <div id="jogavelPickle" onclick="trocaPersonagem('Pickle', '4');"></div>
+
+            <div id="vida1"></div>
+            <div id="vida2"></div>
+            <div id="vida3"></div>
+
+            <audio id="music" autoplay loop> <!-- musica do Game -->
+               <source src="musics/gameMusic.mp3" type="audio/mpeg">
+            </audio>
+
+    </body>
+
+</html>    
